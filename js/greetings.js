@@ -35,7 +35,7 @@ function onLoginSubmit(event){
 
 function paintGreetings(paintName) {
     const clockHour = parseInt(clock.innerText);
-    if(clockHour >= 5 && clockHour <= 11) {
+    if(clockHour >= 4 && clockHour <= 11) {
         greeting.innerText = `Good morning, ${paintName}`;
     } else if(clockHour >= 12 && clockHour <= 17) {
         greeting.innerText = `Good afternoon, ${paintName}`
