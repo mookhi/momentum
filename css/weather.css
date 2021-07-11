@@ -1,0 +1,23 @@
+#weather {
+  color: white;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 15px;
+  transition: all 0.3 ease-in-out;
+  text-shadow: var(--main-shadow);
+}
+#weather span {
+  height: 30px;
+}
+#weather span:first-child {
+  font-size: 18px;
+}
+#weather span:hover {
+  font-weight: 600;
+}

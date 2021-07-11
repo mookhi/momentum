@@ -1,0 +1,41 @@
+@keyframes showQuote {
+  from {
+    transform: scaley(0);
+    transform-origin: 100% 0%;
+  }
+  to {
+    transform: scaley(1);
+    transform-origin: 100% 0%;
+  }
+}
+@keyframes showAuthor {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+#quote {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  width: 100vw;
+  text-align: center;
+  text-shadow: var(--main-shadow);
+}
+#quote span {
+  display: block;
+  margin: 5px 0px;
+}
+#quote span:first-child {
+  animation: showQuote 1s ease-in-out forwards;
+}
+#quote span:last-child {
+  font-size: 14px;
+  opacity: 0;
+  animation: showAuthor 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
